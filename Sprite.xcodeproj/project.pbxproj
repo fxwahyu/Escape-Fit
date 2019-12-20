@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6947FBD723596F1000280116 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6947FBD523596F1000280116 /* Interface.storyboard */; };
+		6947FBD923596F1100280116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6947FBD823596F1100280116 /* Assets.xcassets */; };
+		6947FBE023596F1100280116 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6947FBDF23596F1100280116 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6947FBE523596F1100280116 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FBE423596F1100280116 /* InterfaceController.swift */; };
+		6947FBE723596F1100280116 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FBE623596F1100280116 /* ExtensionDelegate.swift */; };
+		6947FBE923596F1100280116 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FBE823596F1100280116 /* NotificationController.swift */; };
+		6947FBEB23596F1100280116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6947FBEA23596F1100280116 /* Assets.xcassets */; };
+		6947FBF023596F1100280116 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6947FBD323596F1000280116 /* watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6947FBFA235970C600280116 /* mpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FBF9235970C600280116 /* mpc.swift */; };
+		6947FBFE235975EC00280116 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6947FBFD235975EC00280116 /* HealthKit.framework */; };
+		6947FC01235975FA00280116 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6947FC00235975FA00280116 /* HealthKit.framework */; };
+		6947FC0323599F3300280116 /* MultipeerRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FC0223599F3300280116 /* MultipeerRoom.swift */; };
+		6947FC052359A51A00280116 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6947FC042359A51A00280116 /* CreateRoom.swift */; };
+		69563BAA2366DAB3009E8DDE /* kidsrockdemo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69563BA92366DA95009E8DDE /* kidsrockdemo.otf */; };
+		69563BAC2366F3C1009E8DDE /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69563BAB2366F3C1009E8DDE /* GameScore.swift */; };
+		698D59A92394D8FF00A02A4C /* GameFlappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D59A82394D8FF00A02A4C /* GameFlappy.swift */; };
+		69AA7DD3236A9BF000D44BF4 /* CrownAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AA7DD2236A9BF000D44BF4 /* CrownAlert.swift */; };
+		69D1C4D9236AD7F900F9B6DC /* Game Title Pump The Balloon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D1236AD7F900F9B6DC /* Game Title Pump The Balloon.wav */; };
+		69D1C4DA236AD7F900F9B6DC /* Go Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D2236AD7F900F9B6DC /* Go Sound.wav */; };
+		69D1C4DB236AD7F900F9B6DC /* Win Jingle Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D3236AD7F900F9B6DC /* Win Jingle Sound.wav */; };
+		69D1C4DC236AD7F900F9B6DC /* Story Backsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D4236AD7F900F9B6DC /* Story Backsound.wav */; };
+		69D1C4DD236AD7F900F9B6DC /* Duar Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D5236AD7F900F9B6DC /* Duar Sound.wav */; };
+		69D1C4DE236AD7F900F9B6DC /* Game Title Climb The Ladder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D6236AD7F900F9B6DC /* Game Title Climb The Ladder.wav */; };
+		69D1C4DF236AD7F900F9B6DC /* Climb Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D7236AD7F900F9B6DC /* Climb Sound.wav */; };
+		69D1C4E0236AD7F900F9B6DC /* Ready Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4D8236AD7F900F9B6DC /* Ready Sound.wav */; };
+		69D1C4E2236ADE9900F9B6DC /* Lose Jingle Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69D1C4E1236ADE9900F9B6DC /* Lose Jingle Sound.wav */; };
+		69E687A2235FFC2E0011F76D /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E687A1235FFC2E0011F76D /* MusicPlayer.swift */; };
+		69E687B6236068A10011F76D /* Pump The Balloon Game Backsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E687B2236068A10011F76D /* Pump The Balloon Game Backsound.wav */; };
+		69E687B7236068A10011F76D /* Main Menu Backsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E687B3236068A10011F76D /* Main Menu Backsound.wav */; };
+		69E687B8236068A10011F76D /* Menu Backsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E687B4236068A10011F76D /* Menu Backsound.wav */; };
+		69E687B9236068A10011F76D /* Button Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69E687B5236068A10011F76D /* Button Sound.mp3 */; };
+		69F386552368288400250DF8 /* Flying Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69F386542368288400250DF8 /* Flying Sound.wav */; };
+		69F3865F236829CE00250DF8 /* Pump Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69F3865E236829CE00250DF8 /* Pump Sound.mp3 */; };
+		69F38661236831F900250DF8 /* Imperfecta Regular Rough.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69F38660236831F800250DF8 /* Imperfecta Regular Rough.ttf */; };
+		69F386632368350000250DF8 /* Imperfecta Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69F38662236834FF00250DF8 /* Imperfecta Regular.ttf */; };
+		6A3EBF72236744AD00B71E4E /* Prologue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3EBF71236744AD00B71E4E /* Prologue.swift */; };
+		6A610C2B236A9EA600F37E18 /* nearMeteor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A610C2A236A9EA600F37E18 /* nearMeteor.wav */; };
+		6AA6A64323673F8C002434D5 /* GameLadderTittle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6A64223673F8C002434D5 /* GameLadderTittle.swift */; };
+		6AA6A6452367412E002434D5 /* simpleLiquidShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6A6442367412E002434D5 /* simpleLiquidShader.fsh */; };
+		6AA6A647236741CF002434D5 /* GamePumpTittle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6A646236741CF002434D5 /* GamePumpTittle.swift */; };
+		6ABAE1CF236AAE840023358B /* explosionSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6ABAE1CE236AAE840023358B /* explosionSound.wav */; };
+		C80067D3234D83BD00C002E8 /* GamePump.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80067D2234D83BD00C002E8 /* GamePump.swift */; };
+		C838E9A723546BED0006D49A /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C838E9A623546BED0006D49A /* MenuScene.swift */; };
+		C840B3612339D35A00CFE741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840B3602339D35A00CFE741 /* AppDelegate.swift */; };
+		C840B3672339D35A00CFE741 /* GameLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840B3662339D35A00CFE741 /* GameLadder.swift */; };
+		C840B3692339D35A00CFE741 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C840B3682339D35A00CFE741 /* GameViewController.swift */; };
+		C840B36C2339D35A00CFE741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C840B36A2339D35A00CFE741 /* Main.storyboard */; };
+		C840B36E2339D35E00CFE741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C840B36D2339D35E00CFE741 /* Assets.xcassets */; };
+		C840B3712339D35E00CFE741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C840B36F2339D35E00CFE741 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6947FBE123596F1100280116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840B3552339D35900CFE741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6947FBDE23596F1100280116;
+			remoteInfo = "watch Extension";
+		};
+		6947FBEE23596F1100280116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840B3552339D35900CFE741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6947FBD223596F1000280116;
+			remoteInfo = watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6947FBF423596F1100280116 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6947FBE023596F1100280116 /* watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6947FBF823596F1100280116 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6947FBF023596F1100280116 /* watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6947FBD323596F1000280116 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6947FBD623596F1000280116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6947FBD823596F1100280116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6947FBDA23596F1100280116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6947FBDF23596F1100280116 /* watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6947FBE423596F1100280116 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6947FBE623596F1100280116 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6947FBE823596F1100280116 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6947FBEA23596F1100280116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6947FBEC23596F1100280116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6947FBED23596F1100280116 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6947FBF9235970C600280116 /* mpc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mpc.swift; sourceTree = "<group>"; };
+		6947FBFB235975EC00280116 /* watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watch Extension.entitlements"; sourceTree = "<group>"; };
+		6947FBFD235975EC00280116 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		6947FBFF235975FA00280116 /* Sprite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sprite.entitlements; sourceTree = "<group>"; };
+		6947FC00235975FA00280116 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		6947FC0223599F3300280116 /* MultipeerRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerRoom.swift; sourceTree = "<group>"; };
+		6947FC042359A51A00280116 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
+		69563BA92366DA95009E8DDE /* kidsrockdemo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kidsrockdemo.otf; sourceTree = "<group>"; };
+		69563BAB2366F3C1009E8DDE /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
+		698D59A82394D8FF00A02A4C /* GameFlappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFlappy.swift; sourceTree = "<group>"; };
+		69AA7DD2236A9BF000D44BF4 /* CrownAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrownAlert.swift; sourceTree = "<group>"; };
+		69D1C4D1236AD7F900F9B6DC /* Game Title Pump The Balloon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Game Title Pump The Balloon.wav"; sourceTree = "<group>"; };
+		69D1C4D2236AD7F900F9B6DC /* Go Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Go Sound.wav"; sourceTree = "<group>"; };
+		69D1C4D3236AD7F900F9B6DC /* Win Jingle Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Win Jingle Sound.wav"; sourceTree = "<group>"; };
+		69D1C4D4236AD7F900F9B6DC /* Story Backsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Story Backsound.wav"; path = "../Story Backsound.wav"; sourceTree = "<group>"; };
+		69D1C4D5236AD7F900F9B6DC /* Duar Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Duar Sound.wav"; sourceTree = "<group>"; };
+		69D1C4D6236AD7F900F9B6DC /* Game Title Climb The Ladder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Game Title Climb The Ladder.wav"; sourceTree = "<group>"; };
+		69D1C4D7236AD7F900F9B6DC /* Climb Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Climb Sound.wav"; sourceTree = "<group>"; };
+		69D1C4D8236AD7F900F9B6DC /* Ready Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ready Sound.wav"; sourceTree = "<group>"; };
+		69D1C4E1236ADE9900F9B6DC /* Lose Jingle Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lose Jingle Sound.wav"; sourceTree = "<group>"; };
+		69E687A1235FFC2E0011F76D /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		69E687B2236068A10011F76D /* Pump The Balloon Game Backsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pump The Balloon Game Backsound.wav"; sourceTree = "<group>"; };
+		69E687B3236068A10011F76D /* Main Menu Backsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Main Menu Backsound.wav"; sourceTree = "<group>"; };
+		69E687B4236068A10011F76D /* Menu Backsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Menu Backsound.wav"; sourceTree = "<group>"; };
+		69E687B5236068A10011F76D /* Button Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Button Sound.mp3"; sourceTree = "<group>"; };
+		69F386542368288400250DF8 /* Flying Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Flying Sound.wav"; sourceTree = "<group>"; };
+		69F3865E236829CE00250DF8 /* Pump Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pump Sound.mp3"; sourceTree = "<group>"; };
+		69F38660236831F800250DF8 /* Imperfecta Regular Rough.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Imperfecta Regular Rough.ttf"; sourceTree = "<group>"; };
+		69F38662236834FF00250DF8 /* Imperfecta Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Imperfecta Regular.ttf"; sourceTree = "<group>"; };
+		6A3EBF71236744AD00B71E4E /* Prologue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prologue.swift; sourceTree = "<group>"; };
+		6A610C2A236A9EA600F37E18 /* nearMeteor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nearMeteor.wav; sourceTree = "<group>"; };
+		6AA6A64223673F8C002434D5 /* GameLadderTittle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLadderTittle.swift; sourceTree = "<group>"; };
+		6AA6A6442367412E002434D5 /* simpleLiquidShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simpleLiquidShader.fsh; sourceTree = "<group>"; };
+		6AA6A646236741CF002434D5 /* GamePumpTittle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePumpTittle.swift; sourceTree = "<group>"; };
+		6ABAE1CE236AAE840023358B /* explosionSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosionSound.wav; sourceTree = "<group>"; };
+		C80067D2234D83BD00C002E8 /* GamePump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePump.swift; sourceTree = "<group>"; };
+		C838E9A623546BED0006D49A /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		C840B35D2339D35A00CFE741 /* Escape Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Escape Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C840B3602339D35A00CFE741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C840B3662339D35A00CFE741 /* GameLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLadder.swift; sourceTree = "<group>"; };
+		C840B3682339D35A00CFE741 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C840B36B2339D35A00CFE741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C840B36D2339D35E00CFE741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C840B3702339D35E00CFE741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C840B3722339D35E00CFE741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6947FBDC23596F1100280116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FBFE235975EC00280116 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840B35A2339D35900CFE741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FC01235975FA00280116 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6947FBD423596F1000280116 /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				6947FBD523596F1000280116 /* Interface.storyboard */,
+				6947FBD823596F1100280116 /* Assets.xcassets */,
+				6947FBDA23596F1100280116 /* Info.plist */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		6947FBE323596F1100280116 /* watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6947FBFB235975EC00280116 /* watch Extension.entitlements */,
+				6947FBE423596F1100280116 /* InterfaceController.swift */,
+				6947FBE623596F1100280116 /* ExtensionDelegate.swift */,
+				6947FBE823596F1100280116 /* NotificationController.swift */,
+				6947FBEA23596F1100280116 /* Assets.xcassets */,
+				6947FBEC23596F1100280116 /* Info.plist */,
+				6947FBED23596F1100280116 /* PushNotificationPayload.apns */,
+			);
+			path = "watch Extension";
+			sourceTree = "<group>";
+		};
+		6947FBFC235975EC00280116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6947FC00235975FA00280116 /* HealthKit.framework */,
+				6947FBFD235975EC00280116 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69D1C4D0236AD7F900F9B6DC /* Revised File */ = {
+			isa = PBXGroup;
+			children = (
+				69D1C4E1236ADE9900F9B6DC /* Lose Jingle Sound.wav */,
+				69D1C4D1236AD7F900F9B6DC /* Game Title Pump The Balloon.wav */,
+				69D1C4D2236AD7F900F9B6DC /* Go Sound.wav */,
+				69D1C4D3236AD7F900F9B6DC /* Win Jingle Sound.wav */,
+				69D1C4D4236AD7F900F9B6DC /* Story Backsound.wav */,
+				69D1C4D5236AD7F900F9B6DC /* Duar Sound.wav */,
+				69D1C4D6236AD7F900F9B6DC /* Game Title Climb The Ladder.wav */,
+				69D1C4D7236AD7F900F9B6DC /* Climb Sound.wav */,
+				69D1C4D8236AD7F900F9B6DC /* Ready Sound.wav */,
+			);
+			path = "Revised File";
+			sourceTree = "<group>";
+		};
+		69E6879D235D4BA10011F76D /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C838E9A623546BED0006D49A /* MenuScene.swift */,
+				C840B3662339D35A00CFE741 /* GameLadder.swift */,
+				C80067D2234D83BD00C002E8 /* GamePump.swift */,
+				698D59A82394D8FF00A02A4C /* GameFlappy.swift */,
+				6947FC042359A51A00280116 /* CreateRoom.swift */,
+				6947FC0223599F3300280116 /* MultipeerRoom.swift */,
+				6AA6A64223673F8C002434D5 /* GameLadderTittle.swift */,
+				6AA6A646236741CF002434D5 /* GamePumpTittle.swift */,
+				6A3EBF71236744AD00B71E4E /* Prologue.swift */,
+				69AA7DD2236A9BF000D44BF4 /* CrownAlert.swift */,
+			);
+			path = "Game Scene";
+			sourceTree = "<group>";
+		};
+		69E6879E235D4BAB0011F76D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		69E6879F235D4BBB0011F76D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C840B3682339D35A00CFE741 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69E687A0235D4BC20011F76D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6947FBF9235970C600280116 /* mpc.swift */,
+				69E687A1235FFC2E0011F76D /* MusicPlayer.swift */,
+				69563BAB2366F3C1009E8DDE /* GameScore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69E687B1236068A10011F76D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				69D1C4D0236AD7F900F9B6DC /* Revised File */,
+				6ABAE1CE236AAE840023358B /* explosionSound.wav */,
+				6A610C2A236A9EA600F37E18 /* nearMeteor.wav */,
+				69F386542368288400250DF8 /* Flying Sound.wav */,
+				69E687B2236068A10011F76D /* Pump The Balloon Game Backsound.wav */,
+				69E687B3236068A10011F76D /* Main Menu Backsound.wav */,
+				69F3865E236829CE00250DF8 /* Pump Sound.mp3 */,
+				69E687B4236068A10011F76D /* Menu Backsound.wav */,
+				69E687B5236068A10011F76D /* Button Sound.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		C840B3542339D35900CFE741 = {
+			isa = PBXGroup;
+			children = (
+				C840B35F2339D35A00CFE741 /* Sprite */,
+				6947FBD423596F1000280116 /* watch */,
+				6947FBE323596F1100280116 /* watch Extension */,
+				C840B35E2339D35A00CFE741 /* Products */,
+				6947FBFC235975EC00280116 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C840B35E2339D35A00CFE741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C840B35D2339D35A00CFE741 /* Escape Fit.app */,
+				6947FBD323596F1000280116 /* watch.app */,
+				6947FBDF23596F1100280116 /* watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C840B35F2339D35A00CFE741 /* Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				6AA6A6442367412E002434D5 /* simpleLiquidShader.fsh */,
+				69E687B1236068A10011F76D /* Music */,
+				69E687A0235D4BC20011F76D /* Model */,
+				69E6879F235D4BBB0011F76D /* Controller */,
+				69E6879E235D4BAB0011F76D /* Animation */,
+				69E6879D235D4BA10011F76D /* Game Scene */,
+				6947FBFF235975FA00280116 /* Sprite.entitlements */,
+				C840B3602339D35A00CFE741 /* AppDelegate.swift */,
+				C840B36A2339D35A00CFE741 /* Main.storyboard */,
+				C840B36D2339D35E00CFE741 /* Assets.xcassets */,
+				69563BA92366DA95009E8DDE /* kidsrockdemo.otf */,
+				69F38662236834FF00250DF8 /* Imperfecta Regular.ttf */,
+				69F38660236831F800250DF8 /* Imperfecta Regular Rough.ttf */,
+				C840B36F2339D35E00CFE741 /* LaunchScreen.storyboard */,
+				C840B3722339D35E00CFE741 /* Info.plist */,
+			);
+			path = Sprite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6947FBD223596F1000280116 /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6947FBF523596F1100280116 /* Build configuration list for PBXNativeTarget "watch" */;
+			buildPhases = (
+				6947FBD123596F1000280116 /* Resources */,
+				6947FBF423596F1100280116 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6947FBE223596F1100280116 /* PBXTargetDependency */,
+			);
+			name = watch;
+			productName = watch;
+			productReference = 6947FBD323596F1000280116 /* watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6947FBDE23596F1100280116 /* watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6947FBF123596F1100280116 /* Build configuration list for PBXNativeTarget "watch Extension" */;
+			buildPhases = (
+				6947FBDB23596F1100280116 /* Sources */,
+				6947FBDC23596F1100280116 /* Frameworks */,
+				6947FBDD23596F1100280116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watch Extension";
+			productName = "watch Extension";
+			productReference = 6947FBDF23596F1100280116 /* watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C840B35C2339D35900CFE741 /* Sprite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C840B3752339D35E00CFE741 /* Build configuration list for PBXNativeTarget "Sprite" */;
+			buildPhases = (
+				C840B3592339D35900CFE741 /* Sources */,
+				C840B35A2339D35900CFE741 /* Frameworks */,
+				C840B35B2339D35900CFE741 /* Resources */,
+				6947FBF823596F1100280116 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6947FBEF23596F1100280116 /* PBXTargetDependency */,
+			);
+			name = Sprite;
+			productName = Sprite;
+			productReference = C840B35D2339D35A00CFE741 /* Escape Fit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C840B3552339D35900CFE741 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Felix Kylie";
+				TargetAttributes = {
+					6947FBD223596F1000280116 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6947FBDE23596F1100280116 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					C840B35C2339D35900CFE741 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = C840B3582339D35900CFE741 /* Build configuration list for PBXProject "Sprite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C840B3542339D35900CFE741;
+			productRefGroup = C840B35E2339D35A00CFE741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C840B35C2339D35900CFE741 /* Sprite */,
+				6947FBD223596F1000280116 /* watch */,
+				6947FBDE23596F1100280116 /* watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6947FBD123596F1000280116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FBD923596F1100280116 /* Assets.xcassets in Resources */,
+				6947FBD723596F1000280116 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6947FBDD23596F1100280116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FBEB23596F1100280116 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840B35B2339D35900CFE741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ABAE1CF236AAE840023358B /* explosionSound.wav in Resources */,
+				69D1C4D9236AD7F900F9B6DC /* Game Title Pump The Balloon.wav in Resources */,
+				69D1C4DE236AD7F900F9B6DC /* Game Title Climb The Ladder.wav in Resources */,
+				69F386552368288400250DF8 /* Flying Sound.wav in Resources */,
+				69D1C4DB236AD7F900F9B6DC /* Win Jingle Sound.wav in Resources */,
+				69563BAA2366DAB3009E8DDE /* kidsrockdemo.otf in Resources */,
+				69D1C4E2236ADE9900F9B6DC /* Lose Jingle Sound.wav in Resources */,
+				69D1C4E0236AD7F900F9B6DC /* Ready Sound.wav in Resources */,
+				69D1C4DC236AD7F900F9B6DC /* Story Backsound.wav in Resources */,
+				C840B36C2339D35A00CFE741 /* Main.storyboard in Resources */,
+				69D1C4DF236AD7F900F9B6DC /* Climb Sound.wav in Resources */,
+				69F3865F236829CE00250DF8 /* Pump Sound.mp3 in Resources */,
+				C840B36E2339D35E00CFE741 /* Assets.xcassets in Resources */,
+				69D1C4DA236AD7F900F9B6DC /* Go Sound.wav in Resources */,
+				69E687B9236068A10011F76D /* Button Sound.mp3 in Resources */,
+				6A610C2B236A9EA600F37E18 /* nearMeteor.wav in Resources */,
+				C840B3712339D35E00CFE741 /* LaunchScreen.storyboard in Resources */,
+				6AA6A6452367412E002434D5 /* simpleLiquidShader.fsh in Resources */,
+				69E687B8236068A10011F76D /* Menu Backsound.wav in Resources */,
+				69E687B6236068A10011F76D /* Pump The Balloon Game Backsound.wav in Resources */,
+				69E687B7236068A10011F76D /* Main Menu Backsound.wav in Resources */,
+				69D1C4DD236AD7F900F9B6DC /* Duar Sound.wav in Resources */,
+				69F386632368350000250DF8 /* Imperfecta Regular.ttf in Resources */,
+				69F38661236831F900250DF8 /* Imperfecta Regular Rough.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6947FBDB23596F1100280116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FBE923596F1100280116 /* NotificationController.swift in Sources */,
+				6947FBE723596F1100280116 /* ExtensionDelegate.swift in Sources */,
+				6947FBE523596F1100280116 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840B3592339D35900CFE741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6947FBFA235970C600280116 /* mpc.swift in Sources */,
+				C840B3672339D35A00CFE741 /* GameLadder.swift in Sources */,
+				69E687A2235FFC2E0011F76D /* MusicPlayer.swift in Sources */,
+				6947FC0323599F3300280116 /* MultipeerRoom.swift in Sources */,
+				C838E9A723546BED0006D49A /* MenuScene.swift in Sources */,
+				6947FC052359A51A00280116 /* CreateRoom.swift in Sources */,
+				698D59A92394D8FF00A02A4C /* GameFlappy.swift in Sources */,
+				69AA7DD3236A9BF000D44BF4 /* CrownAlert.swift in Sources */,
+				69563BAC2366F3C1009E8DDE /* GameScore.swift in Sources */,
+				C80067D3234D83BD00C002E8 /* GamePump.swift in Sources */,
+				6AA6A64323673F8C002434D5 /* GameLadderTittle.swift in Sources */,
+				6AA6A647236741CF002434D5 /* GamePumpTittle.swift in Sources */,
+				C840B3692339D35A00CFE741 /* GameViewController.swift in Sources */,
+				C840B3612339D35A00CFE741 /* AppDelegate.swift in Sources */,
+				6A3EBF72236744AD00B71E4E /* Prologue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6947FBE223596F1100280116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6947FBDE23596F1100280116 /* watch Extension */;
+			targetProxy = 6947FBE123596F1100280116 /* PBXContainerItemProxy */;
+		};
+		6947FBEF23596F1100280116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6947FBD223596F1000280116 /* watch */;
+			targetProxy = 6947FBEE23596F1100280116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6947FBD523596F1000280116 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6947FBD623596F1000280116 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C840B36A2339D35A00CFE741 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C840B36B2339D35A00CFE741 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C840B36F2339D35E00CFE741 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C840B3702339D35E00CFE741 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6947FBF223596F1100280116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		6947FBF323596F1100280116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				INFOPLIST_FILE = "watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		6947FBF623596F1100280116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		6947FBF723596F1100280116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				IBSC_MODULE = watch_Extension;
+				INFOPLIST_FILE = watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		C840B3732339D35E00CFE741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C840B3742339D35E00CFE741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C840B3762339D35E00CFE741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sprite/Sprite.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				INFOPLIST_FILE = Sprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite;
+				PRODUCT_NAME = "Escape Fit";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C840B3772339D35E00CFE741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sprite/Sprite.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FK9GT8TCR;
+				INFOPLIST_FILE = Sprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = asdev.Sprite;
+				PRODUCT_NAME = "Escape Fit";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6947FBF123596F1100280116 /* Build configuration list for PBXNativeTarget "watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6947FBF223596F1100280116 /* Debug */,
+				6947FBF323596F1100280116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6947FBF523596F1100280116 /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6947FBF623596F1100280116 /* Debug */,
+				6947FBF723596F1100280116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C840B3582339D35900CFE741 /* Build configuration list for PBXProject "Sprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840B3732339D35E00CFE741 /* Debug */,
+				C840B3742339D35E00CFE741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C840B3752339D35E00CFE741 /* Build configuration list for PBXNativeTarget "Sprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840B3762339D35E00CFE741 /* Debug */,
+				C840B3772339D35E00CFE741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C840B3552339D35900CFE741 /* Project object */;
+}
